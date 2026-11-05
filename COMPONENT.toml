@@ -1,0 +1,9 @@
+[component]
+name = "SigmaOS-simple-scan"
+description = "SigmaOS subsystem component for simple-scan"
+version = "0.1.0"
+tier = 5
+
+[capabilities]
+contract_version = "1.0.0"
+principles = ["DRY", "KISS", "SOLID", "Arrange-Act-Assert", "Pristine-Sources"]
