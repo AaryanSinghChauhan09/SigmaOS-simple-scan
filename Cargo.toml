@@ -2,6 +2,8 @@
 name = "sigmaos_simple_scan"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "SigmaOS simple-scan component inspired by Linux Mint / Omarchy / Arch Linux."
 
 [lib]
 name = "sigmaos_simple_scan"
