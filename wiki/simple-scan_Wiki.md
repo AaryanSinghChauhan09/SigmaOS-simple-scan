@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-simple-scan Component Wiki
+# SigmaOS-simple-scan Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-simple-scan provides Scanner (SANE) frontend for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-simple-scan provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-simple-scan Abstraction
-- Fail-Fast on SigmaOS-simple-scan Initialization Errors
-- Deterministic SigmaOS-simple-scan Setup
-- Clear Abstraction Over SigmaOS-simple-scan APIs
-- Composition over Inheritance for SigmaOS-simple-scan extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-simple-scan Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-simple-scan Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-simple-scan Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-simple-scan APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-simple-scan extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-simple-scan follows a SigmaOS-simple-scan pattern:
+SigmaOS-simple-scan follows a SigmaOS-simple-scan pattern:
 - **SigmaOS-simple-scan Core**: Provides SigmaOS-simple-scan support, SigmaOS-simple-scan management, and SigmaOS-simple-scan tracking
 - **Management**: Supports SigmaOS-simple-scan management, SigmaOS-simple-scan configuration, and SigmaOS-simple-scan lifecycle
 - **Tracking**: Supports SigmaOS-simple-scan status, SigmaOS-simple-scan tracking, and SigmaOS-simple-scan lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-simple-scan follows a SigmaOS-simple-scan pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-simple-scan by given configuration
--  - Register a SigmaOS-simple-scan by given name
--  - Get SigmaOS-simple-scan status and SigmaOS-simple-scan availability
--  - Track SigmaOS-simple-scan management and SigmaOS-simple-scan tracking
+- Manage a SigmaOS-simple-scan by given configuration
+- Register a SigmaOS-simple-scan by given name
+- Get SigmaOS-simple-scan status and SigmaOS-simple-scan availability
+- Track SigmaOS-simple-scan management and SigmaOS-simple-scan tracking
 - Error types for SigmaOS-simple-scan failure scenarios or unsupported SigmaOS-simple-scan types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-simple-scan init, SigmaOS-simple-scan management)
 3. **Assert**: Verify the expected SigmaOS-simple-scan results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-simple-scan initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-simple-scan failure scenarios
 - Unit tests provided for SigmaOS-simple-scan management and configuration
